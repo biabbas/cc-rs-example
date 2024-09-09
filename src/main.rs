@@ -1,12 +1,9 @@
 extern "C" {
-    fn foo_function();
-    fn bar_function(x: i32) -> i32;
+    fn foo_factorial(x: i32);
 }
 pub fn call() {
     unsafe {
-        foo_function();
-        bar_function(42);
-        foo_factorial(bar_function(5));
+        foo_factorial(5);
     }
 }
 

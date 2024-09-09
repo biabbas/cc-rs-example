@@ -1,5 +1,5 @@
-#include<cstdio>
-#include<stdint.h>
+#include<iostream>
+extern "C"{
 void foo_factorial(int32_t a){
     if(a > 0){
         printf("(%d)*\v",a);
@@ -7,4 +7,5 @@ void foo_factorial(int32_t a){
     }
     else
         printf("\n");
+}
 }
